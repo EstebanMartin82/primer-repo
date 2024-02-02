@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+
+
+/* navbar    */
+.navbar {
+    background-color: rgb(235, 193, 126);
+    }
+/* .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 15px;
+    padding: 10px;
+    } */
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border: 2px solid black;
+    padding: 5px 15px;
+    transition: 0.5s;
+    }
+.nav-list li {
+    text-decoration: none;
+    padding: 5px;
+    display: inline-block;
+    }
+.nav-link:hover {
+        background-color: darkgray;
+        color: beige;
+    }
+    
+.nav-list:hover .nav-link:not(:hover) {
+        filter: blur(1px);
+    }
+.nav-item:hover {
+        filter: blur(1px);
+        transition: 1s;
+        }
+.nav-item li:hover {
+        background-color: rgb(243, 217, 170);
+    }
+.navbar-brand {
+        color: black;
+        border-radius: 2px solid black;
+    
+    }
+/* @media (max-width:720px) {
+.nav-list,.nav-link li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        } */
+
+
+
+/* Index        */
+.foto-index img {
+    width: 100%;
+    height: 795px;
+    object-fit: cover;
+    }
+
+
+
+/* contacto */
+.foto-contacto
+    img {
+        margin: 10px 350px;
+        width: 50%;
+        height: 100%;
+    }
+form {
+    font-family: 'Genos',sans-serif;
+    font-size: 20px;
+    background-color: darkgrey;
+    border: 1px solid black;}
+
+    
+.grid-container {    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    'content form'
+    'map     form';
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+    }
+.form-grid {
+        display: grid;
+        grid-area:content;
+        text-align:center;
+        padding: 5px;
+        gap: 10px;
+        width:100% ;
+        }
+.form-data {
+        display: grid;
+        grid-area:form;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+form iframe {
+        grid-area:map;
+        width: 100%;
+        height: 400px;
+        padding: 50px;
+        margin: 0px;
+        }
+form input,form textarea {
+        width: 100%;
+        padding: 15px;
+        font-size: 20px;
+        background-color: rgb(26, 24, 24);
+        border: 1px solid white;
+        color: white;
+        }
+@media (max-width:768px){
+.foto-contacto {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content:center;
+    }}
+
+@media (max-width:600px){
+.form-grid. {
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+    'content'
+    'form'
+    'form'
+    'map';
+    }}
+@media (max-width:600px){
+iframe {
+       display: flex;
+       justify-content: center;
+       max-width: 100%; 
+       height: auto;
+}}
+@media (max-width:1024px){
+.grid-container {    
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas:
+    'content'
+    'form'
+    'form'
+    'map';
+}}
+
+
+
+/* <!--galeria-->  */
+.galeria {
+    border: 2px solid black;
+    }
+.galeria h2 {
+    font-family: 'Genos',sans-serif;
+    font-size: 45px;
+    background-color: darkgray;
+    text-align: center;
+    padding: 35px;
+    }
+.galeria p {
+    font-family:'Genos',sans-serif;
+    font-size: 30px;
+    background-color: darkgray;
+    padding: 15px;
+    }
+.videos-list {
+    background-color: darkgrey;
+    height: 1000px;
+    border: 2px solid black;
+    }
+.videos-link {
+    width: 45%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 6%
+    }
+
+
+/* <!--nosotros--> */
+.nosotros {
+    background-color: darkgray;
+    padding: 20px;
+    border: 2px solid black;
+    }
+.nosotros h3 {
+    text-align: center;
+    font-size: 40px;
+    margin: 25px;
+    padding: 30px;
+    }
+.nosotros p {
+    font-size: 30px;
+    margin: 15px;
+    padding: 35px;
+    }
+
+.nosotros-foto img {
+        margin: 10px 350px;
+        width: 50%;
+        height: 100%;
+    }
+.nosotros img {
+    width: 10%;
+    }
+/* .pseudo {
+    display: flex;
+    flex-direction: column;
+    align-items:normal;
+    justify-content:center;
+    gap: 15px;
+    padding: 20px;
+    } */
+
+
+/* <!--productos--> */
+.productos {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    border: 1px solid;
+    }
+.productos-content {
+    width: 47%;
+    background-color: rgb(142, 148, 148);
+    overflow: hidden;
+    padding: 10px;
+    margin: 10px;
+    } 
+.productos-content-imagen {
+    width:60%;
+    height: 50%;
+    object-fit:cover;
+    filter: blur(1px);
+    transition: 0.5s;
+    overflow: hidden;
+    }
+.productos-content a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 75px;
+    transition: 0,5s;
+    text-align: left;
+    } 
+
+.productos-content a:hover {
+    background-color: white;
+    border-radius: 5px ;
+    box-shadow:5px 5px 15px 5px rgb(238, 207, 157);
+    }
+.productos-content-imagen:hover {
+    filter: blur(0);
+    border-radius:6px solid black;
+    box-shadow:5px 5px 30px 10px black;
+    /* width: 700px; */
+   }
+/* .productos:nth-last-child(odd) {
+    flex-direction: row-reverse;
+    }  */
+
+
+
+@media (max-width:720px){
+.productos.productos-content{
+        flex-basis: 100%;
+         }}
+@media (max-width:720px){
+.productos-content {
+        flex-basis:100% ;
+        max-width: 100%;
+        overflow: hidden;
+        object-fit: cover;
+}}
+   
+@media (max-width:480px){
+.productos.productos-content{
+        width: 100%;
+         }}
+
+@media (max-width:720px){
+.productos-content-imagen {
+    max-width: 100%;
+
+}}
+
+    
+
+
+h2::first-letter {
+    font-size: 70px;
+}
+
+h3::first-letter {
+    font-size: 30px;
+}
+
+
+/* <!--footer--> */
+footer {
+    color: black;
+    padding: 20px;
+    background-color:  rgb(235, 193, 126);
+    text-align: left;
+    }
+.text-blue-light {
+    text-decoration: none;
+    font-size: 20px;
+    }
+.fixed-whatsapp { 
+    position:fixed;
+    bottom:20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    }
+
+
+
+
+
+
+      
+
+
+
+.imagen-personalizada  {
+    width: 100%; 
+    height: 60vh;
+    object-fit: cover;
+    }
+
+
